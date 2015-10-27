@@ -8,6 +8,8 @@ namespace AnotherUnwantedBlog.DAL.DataContexts
 {
     public class UnwantedBlogDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Post> Posts { get; set; }
+
         public UnwantedBlogDbContext()
             : base("AnotherUnwantedBlog")
         {
